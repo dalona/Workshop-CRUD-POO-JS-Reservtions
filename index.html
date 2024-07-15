@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,4 +10,42 @@
     
 </body>
 <script src="app.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System POO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Booking System</h1>
+        <div id="auth">
+            
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+        </div>
+        <div id="actions" style="display: none;">
+            <h2>What do you want to do?</h2>
+            <button id="create-reservation">Book</button>
+            <button id="view-reservations">View Reservtions</button>
+            <button id="logout">Logout</button>
+        </div>
+        <div id="reservation-form" style="display: none;">
+            <h2>Crear Reserva</h2>
+            <input type="text" id="booking-details" placeholder="Booking Details">
+            <button id="save-reservation">Save</button>
+        </div>
+        <div id="reservations" style="display: none;">
+            <h2>My Bookings</h2>
+            <ul id="reservation-list"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
